@@ -157,5 +157,5 @@ in3.addEventListener("change", (event) => {
     action(in3.value.replaceAll(/([^AUCG])/, ""), 3);
 });
 in5.addEventListener("change", (event) => {
-    action(in5.value.replaceAll(/([^ATCG])/i, ""), 4);
+    action(in5.value.replaceAll(/([^ATCG])/, ""), 4);
 });
