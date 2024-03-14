@@ -147,14 +147,14 @@ function action(text, input) {
 
 
 in1.addEventListener("change", (event) => {
-    console.log(in1.value.replaceAll(/([^ATCG])/i, ""));
-    action(in1.value.replaceAll(/([^ATCG])/i, ""), 1);
+    console.log(in1.value.replaceAll(/([^ATCG])/, ""));
+    action(in1.value.replaceAll(/([^ATCG])/, ""), 1);
 });
 in2.addEventListener("change", (event) => {
-    action(in2.value.replaceAll(/([^AUCG])/i, ""), 2);
+    action(in2.value.replaceAll(/([^AUCG])/, ""), 2);
 });
 in3.addEventListener("change", (event) => {
-    action(in3.value.replaceAll(/([^AUCG])/i, ""), 3);
+    action(in3.value.replaceAll(/([^AUCG])/, ""), 3);
 });
 in5.addEventListener("change", (event) => {
     action(in5.value.replaceAll(/([^ATCG])/i, ""), 4);
