@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Elements</title>
+</head>
+<body>
+    <div class="wrapper" id="Electron Configuration">
+        <header>Electron Configuration</header>
+        <p class="text">
+            </br>
+            </br>
+            <br>
+            </br>
+        </p>
+        <div class="input">
+            <input id="in" type="text" size="20"placeholder="Input atomic number">
+            <input id="out" type="text" size="20" value="Electron Configuration" readonly>
+            <input id="out2" type="text" size="20" value="Electronegativity" readonly>
+            <input id="out3" type="text" size="20" value="Element group(simple)" readonly>
+        </div>
+        <button id="b">Search</button>
+        <div class="canvas">
+            <canvas width=250px height="250px" id="main"></canvas>
+            
+        </div>
+    </div>
+    <div class="wrapper">
+        <header>Codon Thing</header>
+        <p class="text">
+            </br>
+            </br>
+            <br>
+            </br>
+        </p>
+        <div class="input1">
+            <input id="in1" type="text" size="50" placeholder="Input DNA Sequence">
+            <input id="in5" type="text" size="50" placeholder="Input Rep. DNA">
+            <input id="in2" type="text" size="50" placeholder="Input mRNA">
+            <input id="in3" type="text" size="50" placeholder="Input tRNA">
+            <input id="in4" type="text" size="50" placeholder="amino acids" readonly>
+        </div>
+        <!--<canvas width="448px" height="250px" id="codonmain" style="position: relative;top:-30%"></canvas>-->
+    </div>
+    <script src=".\index.js"></script>
+    <script src=".\codons.js"></script>
+    <script src=".\Electron-Configuration.js"></script>
+
+</body>
+</html>
