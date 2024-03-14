@@ -9,7 +9,7 @@ let in5 = document.getElementById("in5");
 function clean(text, input) {
     switch (input) {
         case 1:
-            var regex = /([^ATCG])/;
+            var regex = /([^ATCG])/g;
             text = text.replaceAll(regex, "");
             var tempText = '';
             for (let i=0; i<text.length+1;i++){
@@ -19,7 +19,7 @@ function clean(text, input) {
             }
             return tempText;
         case 2:
-            var regex = /([^AUCG])/;
+            var regex = /([^AUCG])/g;
             text = text.replaceAll(regex, "");
             var tempText = '';
             for (let i=0; i<text.length+1;i++){
@@ -147,15 +147,14 @@ function action(text, input) {
 
 
 in1.addEventListener("change", (event) => {
-    console.log(in1.value.replaceAll(/([^ATCG])/, ""));
-    action(in1.value.replaceAll(/([^ATCG])/, ""), 1);
+    action(in1.value.replaceAll(/([^ATCG])/g, ""), 1);
 });
 in2.addEventListener("change", (event) => {
-    action(in2.value.replaceAll(/([^AUCG])/, ""), 2);
+    action(in2.value.replaceAll(/([^AUCG])/g, ""), 2);
 });
 in3.addEventListener("change", (event) => {
-    action(in3.value.replaceAll(/([^AUCG])/, ""), 3);
+    action(in3.value.replaceAll(/([^AUCG])/g, ""), 3);
 });
 in5.addEventListener("change", (event) => {
-    action(in5.value.replaceAll(/([^ATCG])/, ""), 4);
+    action(in5.value.replaceAll(/([^ATCG])/g, ""), 4);
 });
